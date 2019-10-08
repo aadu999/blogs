@@ -21,5 +21,5 @@ thumbnailImage: https://internetofbusiness.com/wp-content/uploads/2018/06/facial
 coverImage: /images/onecover.jpeg
 metaAlignment: center
 ---
-
+This is a sample post!
 
