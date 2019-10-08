@@ -21,8 +21,14 @@ thumbnailImage: https://internetofbusiness.com/wp-content/uploads/2018/06/facial
 coverImage: /images/onecover.jpeg
 metaAlignment: center
 ---
-Linear Regression is perhaps the most effortless calculation in AI. In this post we will investigate this calculation and we will actualize it utilizing Python starting with no outside help. 
-<!--more-->
+This is a small attempt to make a facial recognition system using K Nearest Neighbor algorithm. We will be using OpenCV, Numpy and some other python packages. <!--more--> Initially we've to create a KNN Classifier from the scratch, Those who don't Know much about KNN classifier please read [this](https://google.com).
+
+kindly make sure you've installed Numpy and Open CV
+
+```shell
+pip3 install numpy opencv-python
+```
+
 As the name recommends this calculation is pertinent for Regression issues. Linear Regression is a Linear Model. Which implies, we will build up a linear connection between the information variables(X) and single yield variable(Y). At the point when the input(X) is a solitary variable this model is called Simple Linear Regression and when there are mutiple input variables(X), it is called Multiple Linear Regression.
 
 ### Simple Linear Regression
