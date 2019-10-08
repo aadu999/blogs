@@ -21,5 +21,12 @@ thumbnailImage: https://internetofbusiness.com/wp-content/uploads/2018/06/facial
 coverImage: /images/onecover.jpeg
 metaAlignment: center
 ---
-This is a sample post!
+Linear Regression is perhaps the most effortless calculation in AI. In this post we will investigate this calculation and we will actualize it utilizing Python starting with no outside help. 
+<!--more-->
+As the name recommends this calculation is pertinent for Regression issues. Linear Regression is a Linear Model. Which implies, we will build up a linear connection between the information variables(X) and single yield variable(Y). At the point when the input(X) is a solitary variable this model is called Simple Linear Regression and when there are mutiple input variables(X), it is called Multiple Linear Regression.
 
+### Simple Linear Regression
+We discussed that Linear Regression is a simple model. Simple Linear Regression is the simplest model in machine learning
+
+### Model Representation
+In this problem we have an input variable - X and one output variable - Y. And we want to build linear relationship between these variables. Here the input variable is called Independent Variable and the output variable is called Dependent Variable. We can define this linear relationship as follows:
