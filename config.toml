@@ -18,7 +18,7 @@ defaultContentLanguage = "en-us"
 title = "Machine Learning Practitioner"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "adarshraveendra"
-# googleAnalytics = "UA-149660935-1"
+googleAnalytics = "UA-149660935-1"
 paginate = 7
 canonifyurls = true
 
