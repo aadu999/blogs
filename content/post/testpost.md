@@ -60,4 +60,45 @@ A Haar Cascade is based on “Haar Wavelets” which Wikipedia defines as:
 
 It is based on the Haar Wavelet technique to analyze pixels in the image into squares by function. This uses machine learning techniques to get a high degree of accuracy from what is called “training data”. This uses “integral image” concepts to compute the “features” detected. Haar Cascades use the Adaboost learning algorithm which selects a small number of important features from a large set to give an efficient result of classifiers.
 
-{{< figure src="/images/knn-post.png" alt="Description" >}}
+{{< figure src="/images/knn-post.png" alt="Haar cascade Descriptive Illustration" >}}
+
+Pre-trained Haar models for frontal face is available to [download here](https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml), hence we are going to use that.
+
+```python
+
+import cv2
+
+imagePath = "/Users/adarsh/Desktop/Works/threemen.jpg"
+
+cascadePath = "/Users/adarsh/Desktop/Works/haarcascade_frontalface_default.xml"
+
+#create the face cascade classifier using the xml file
+faceCascade = cv2.CascadeClassifier(cascadePath)
+
+#read the image
+image = cv2.imread(imagePath)
+
+#convert the image in to gray color
+gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+gray= cv2.equalizeHist(gray)
+
+# The face or faces in an image are detected
+# This section requires the most adjustments to get accuracy on face being detected.
+#the first parameter is the image,then the scale factor and the minimum number of neighbors
+
+faces = faceCascade.detectMultiScale(gray,1.2,5)
+
+for (x,y,w,h) in faces:
+    #Here we are drawing rectangle over the faces detected using x,y co-ordinates and w,h height and width in blue color
+    image = cv2.rectangle(image,(x,y),(x+w,y+h),(255,0,0),2)
+
+cv2.imshow('img',image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+{{< figure src="/images/haar-output.jpg" alt="FaceDetection using Haar cascade frontal face default" >}}
+
+Now that we've detected the face, we need to store it somewhere. So here we are going to acquire the images using a webcam and we will store the captured faces in a numpy npz file, it save several arrays into a single file in uncompressed .npz format. We are going to create a face data generator file as mentioned below.
+
+
+
