@@ -1,6 +1,6 @@
 ---
 title: "Face Recognition using KNN"
-date: 2015-06-15
+date: 2019-10-05
 categories:
 - Machine Learning
 - Classification
@@ -56,7 +56,7 @@ After capturing the image with a face in it, we need to extract face out of the 
 ## What are Haar Cascades ?
 A Haar Cascade is based on “Haar Wavelets” which Wikipedia defines as:
 
-> A sequence of rescaled “square-shaped” functions which together form a wavelet family or basis.
+> **A sequence of rescaled “square-shaped” functions which together form a wavelet family or basis.**
 
 It is based on the Haar Wavelet technique to analyze pixels in the image into squares by function. This uses machine learning techniques to get a high degree of accuracy from what is called “training data”. This uses “integral image” concepts to compute the “features” detected. Haar Cascades use the Adaboost learning algorithm which selects a small number of important features from a large set to give an efficient result of classifiers.
 

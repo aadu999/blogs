@@ -15,10 +15,10 @@
 baseURL = "https://blog.adarsh.one/"
 languageCode = "en-us"
 defaultContentLanguage = "en-us"
-title = "Machine Learning Practioner"
+title = "Machine Learning Practitioner"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "adarshraveendra"
-# googleAnalytics = "UA-123-45"
+# googleAnalytics = "UA-149660935-1"
 paginate = 7
 canonifyurls = true
 
@@ -43,7 +43,7 @@ canonifyurls = true
   # Your Twitter username without the @. E.g : thibaudlepretre
   # twitter = "aadu9999"
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
-  # googlePlus = "+ThibaudLepretre"
+  # googlePlus = "+adarshraveendra1"
   github = "aadu999"
 
 # Menu Configuration
@@ -76,7 +76,7 @@ canonifyurls = true
   identifier = "about"
   name = "About"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
-  url = "/#about"
+  url = "https://adarsh.one"
 
 [[menu.links]]
   weight = 1
