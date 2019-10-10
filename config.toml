@@ -193,14 +193,15 @@ canonifyurls = true
     url = "https://www.facebook.com/sharer/sharer.php?u=%s"
 
   [[params.sharingOptions]]
-    name = "Twitter"
-    icon = "fa-twitter"
+    name = "Whatsapp"
+    icon = "fa-whatsapp"
     url = "https://twitter.com/intent/tweet?text=%s"
 
   [[params.sharingOptions]]
     name = "Google+"
     icon = "fa-google-plus"
     url = "https://plus.google.com/share?url=%s"
+  
 
   [params.header.rightLink]
     class = ""
@@ -214,3 +215,9 @@ canonifyurls = true
   # Customize copyright value "© 2017 <CUSTOMIZATION>. All Rights Reserved"
   # [params.footer]
   #   copyright = "<a href=\"https://github.com/kakawait\">kakawait</a>"
+
+  [sitemap]
+    changefreq = "monthly"
+    filename = "sitemap.xml"
+    priority = 0.5
+  [manifest]
